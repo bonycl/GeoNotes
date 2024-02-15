@@ -12,6 +12,7 @@
 		025032992B7E3AB100693056 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025032982B7E3AB100693056 /* ViewController.swift */; };
 		0250329E2B7E3AB200693056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0250329D2B7E3AB200693056 /* Assets.xcassets */; };
 		025032A12B7E3AB200693056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0250329F2B7E3AB200693056 /* LaunchScreen.storyboard */; };
+		52E2D893B89C8491BACD58A9 /* Pods_GeoNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33748631735E93B31704012A /* Pods_GeoNotes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0250329D2B7E3AB200693056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		025032A02B7E3AB200693056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		025032A22B7E3AB200693056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33748631735E93B31704012A /* Pods_GeoNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D1C4BCE49AD944F9CE73723 /* Pods-GeoNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoNotes.debug.xcconfig"; path = "Target Support Files/Pods-GeoNotes/Pods-GeoNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		E2056D7DEAA952C7AD2546CE /* Pods-GeoNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoNotes.release.xcconfig"; path = "Target Support Files/Pods-GeoNotes/Pods-GeoNotes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E2D893B89C8491BACD58A9 /* Pods_GeoNotes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				025032932B7E3AB100693056 /* GeoNotes */,
 				025032922B7E3AB100693056 /* Products */,
+				F07D7D14C857541BF821E08F /* Pods */,
+				5B1686E5F2CFB660857EDBF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +151,24 @@
 			path = Servises;
 			sourceTree = "<group>";
 		};
+		5B1686E5F2CFB660857EDBF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33748631735E93B31704012A /* Pods_GeoNotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F07D7D14C857541BF821E08F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D1C4BCE49AD944F9CE73723 /* Pods-GeoNotes.debug.xcconfig */,
+				E2056D7DEAA952C7AD2546CE /* Pods-GeoNotes.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 025032A52B7E3AB200693056 /* Build configuration list for PBXNativeTarget "GeoNotes" */;
 			buildPhases = (
+				DA0DDFC91EE5A07A81EC0E09 /* [CP] Check Pods Manifest.lock */,
 				0250328D2B7E3AB100693056 /* Sources */,
 				0250328E2B7E3AB100693056 /* Frameworks */,
 				0250328F2B7E3AB100693056 /* Resources */,
+				003BA003F3EBD60CABB5AEC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +235,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003BA003F3EBD60CABB5AEC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoNotes/Pods-GeoNotes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoNotes/Pods-GeoNotes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoNotes/Pods-GeoNotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA0DDFC91EE5A07A81EC0E09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoNotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0250328D2B7E3AB100693056 /* Sources */ = {
@@ -355,6 +424,7 @@
 		};
 		025032A62B7E3AB200693056 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D1C4BCE49AD944F9CE73723 /* Pods-GeoNotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,6 +452,7 @@
 		};
 		025032A72B7E3AB200693056 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2056D7DEAA952C7AD2546CE /* Pods-GeoNotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
