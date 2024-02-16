@@ -14,7 +14,7 @@ extension MainTableViewController {
         
         self.view.backgroundColor = .white
         title = "Spots & Notes"
-        tableView.rowHeight = 50
+//        tableView.rowHeight = 50
         navigationItem.rightBarButtonItem = self.editButtonItem
         
         

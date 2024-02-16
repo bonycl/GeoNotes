@@ -36,26 +36,36 @@ class MainTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
+        
         var content = cell.defaultContentConfiguration()
         content.text = spotsName[indexPath.row]
         content.textProperties.numberOfLines = 2
         content.textProperties.color = .black
-        content.image = UIImage(named: "House")
-        content.imageProperties.cornerRadius = tableView.rowHeight / 2
+        content.image = UIImage(named: "Car")
+        
+        content.imageProperties.maximumSize = CGSize(width: cell.frame.size.height - 8, height: cell.frame.size.height - 8)
+//        content.imageProperties.reservedLayoutSize = CGSize(width: tableView.rowHeight, height: tableView.rowHeight)
+        
+        content.imageProperties.cornerRadius = cell.frame.size.height / 2
         cell.backgroundColor = .white
         cell.contentConfiguration = content
+        cell.imageView?.layer.masksToBounds = true
 
         return cell
     }
-   
-//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UITableView.automaticDimension
-//    }
+    //MARK: - Table view delegate
+
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85
+    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+   
+    
+    
     /*
     // MARK: - Navigation
 

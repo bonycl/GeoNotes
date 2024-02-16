@@ -15,7 +15,7 @@ extension UINavigationController {
         //Hiding Default Line and Shadow
         navigationBar.setValue(true, forKey: "hidesShadow")
     
-        //Creating New line
+        //Creating custom line
         let lineView = UIView(frame: CGRect(x: 0, y: 0, width:0, height: height))
         lineView.backgroundColor = color
         navigationBar.addSubview(lineView)
