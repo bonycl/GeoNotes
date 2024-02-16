@@ -14,7 +14,6 @@ extension MainTableViewController {
         
         self.view.backgroundColor = .white
         title = "Spots & Notes"
-//        tableView.rowHeight = 50
         navigationItem.rightBarButtonItem = self.editButtonItem
         
         
@@ -23,7 +22,7 @@ extension MainTableViewController {
     }
     
     func registerCell() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(CustomMainTableViewCell.self, forCellReuseIdentifier: "CustomMainTableViewCell")
     }
         
         //set global or local
