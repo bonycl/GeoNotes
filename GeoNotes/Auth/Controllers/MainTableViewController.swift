@@ -9,22 +9,17 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
 
+    private let spotsName = ["Garage", "House", "Bar", "Gym", "Shop"]
+    
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Spots & Notes"
-            
-        tableView.rowHeight = 50
-        view.backgroundColor = .white
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        navigationItem.rightBarButtonItem = self.editButtonItem
+        setupUI()
+        registerCell()
+       
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
     }
-         
-    
 
     // MARK: - Table view data source
 
@@ -35,7 +30,7 @@ class MainTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return spotsName.count
     }
 
     
@@ -43,10 +38,10 @@ class MainTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         var content = cell.defaultContentConfiguration()
-        content.text = "test cell lkjn lkj lkjlk"
+        content.text = spotsName[indexPath.row]
         content.textProperties.numberOfLines = 2
         content.textProperties.color = .black
-        content.image = UIImage(systemName: "books.vertical.circle")
+        content.image = UIImage(named: "House")
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.backgroundColor = .white
         cell.contentConfiguration = content
@@ -54,48 +49,13 @@ class MainTableViewController: UITableViewController {
         return cell
     }
    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
+//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return UITableView.automaticDimension
+//    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     /*
     // MARK: - Navigation
 

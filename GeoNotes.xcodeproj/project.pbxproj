@@ -14,6 +14,8 @@
 		025032A12B7E3AB200693056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0250329F2B7E3AB200693056 /* LaunchScreen.storyboard */; };
 		025032B32B7E40CD00693056 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025032B22B7E40CD00693056 /* MainTableViewController.swift */; };
 		025032B62B7E438A00693056 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025032B52B7E438A00693056 /* MainTableViewCell.swift */; };
+		02F2DA942B7F243D00E7FB38 /* MainTableVC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2DA932B7F243D00E7FB38 /* MainTableVC + Extension.swift */; };
+		02F2DA962B7F3F1A00E7FB38 /* UINavController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2DA952B7F3F1A00E7FB38 /* UINavController + Extension.swift */; };
 		52E2D893B89C8491BACD58A9 /* Pods_GeoNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33748631735E93B31704012A /* Pods_GeoNotes.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		025032A22B7E3AB200693056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		025032B22B7E40CD00693056 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		025032B52B7E438A00693056 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		02F2DA932B7F243D00E7FB38 /* MainTableVC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainTableVC + Extension.swift"; sourceTree = "<group>"; };
+		02F2DA952B7F3F1A00E7FB38 /* UINavController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavController + Extension.swift"; sourceTree = "<group>"; };
 		33748631735E93B31704012A /* Pods_GeoNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1C4BCE49AD944F9CE73723 /* Pods-GeoNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoNotes.debug.xcconfig"; path = "Target Support Files/Pods-GeoNotes/Pods-GeoNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		E2056D7DEAA952C7AD2546CE /* Pods-GeoNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoNotes.release.xcconfig"; path = "Target Support Files/Pods-GeoNotes/Pods-GeoNotes.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 		025032AC2B7E3B9A00693056 /* Extensionts */ = {
 			isa = PBXGroup;
 			children = (
+				02F2DA932B7F243D00E7FB38 /* MainTableVC + Extension.swift */,
+				02F2DA952B7F3F1A00E7FB38 /* UINavController + Extension.swift */,
 			);
 			path = Extensionts;
 			sourceTree = "<group>";
@@ -298,9 +304,11 @@
 			files = (
 				025032B32B7E40CD00693056 /* MainTableViewController.swift in Sources */,
 				025032992B7E3AB100693056 /* ViewController.swift in Sources */,
+				02F2DA942B7F243D00E7FB38 /* MainTableVC + Extension.swift in Sources */,
 				025032B62B7E438A00693056 /* MainTableViewCell.swift in Sources */,
 				025032952B7E3AB100693056 /* AppDelegate.swift in Sources */,
 				025032972B7E3AB100693056 /* SceneDelegate.swift in Sources */,
+				02F2DA962B7F3F1A00E7FB38 /* UINavController + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
