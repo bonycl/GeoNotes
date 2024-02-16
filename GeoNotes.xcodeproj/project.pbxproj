@@ -12,6 +12,8 @@
 		025032992B7E3AB100693056 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025032982B7E3AB100693056 /* ViewController.swift */; };
 		0250329E2B7E3AB200693056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0250329D2B7E3AB200693056 /* Assets.xcassets */; };
 		025032A12B7E3AB200693056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0250329F2B7E3AB200693056 /* LaunchScreen.storyboard */; };
+		025032B32B7E40CD00693056 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025032B22B7E40CD00693056 /* MainTableViewController.swift */; };
+		025032B62B7E438A00693056 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025032B52B7E438A00693056 /* MainTableViewCell.swift */; };
 		52E2D893B89C8491BACD58A9 /* Pods_GeoNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33748631735E93B31704012A /* Pods_GeoNotes.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		0250329D2B7E3AB200693056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		025032A02B7E3AB200693056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		025032A22B7E3AB200693056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025032B22B7E40CD00693056 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		025032B52B7E438A00693056 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		33748631735E93B31704012A /* Pods_GeoNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1C4BCE49AD944F9CE73723 /* Pods-GeoNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoNotes.debug.xcconfig"; path = "Target Support Files/Pods-GeoNotes/Pods-GeoNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		E2056D7DEAA952C7AD2546CE /* Pods-GeoNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoNotes.release.xcconfig"; path = "Target Support Files/Pods-GeoNotes/Pods-GeoNotes.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				025032982B7E3AB100693056 /* ViewController.swift */,
+				025032B22B7E40CD00693056 /* MainTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 		025032AB2B7E3B9100693056 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				025032B42B7E435D00693056 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +157,14 @@
 			path = Servises;
 			sourceTree = "<group>";
 		};
+		025032B42B7E435D00693056 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				025032B52B7E438A00693056 /* MainTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		5B1686E5F2CFB660857EDBF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +179,6 @@
 				6D1C4BCE49AD944F9CE73723 /* Pods-GeoNotes.debug.xcconfig */,
 				E2056D7DEAA952C7AD2546CE /* Pods-GeoNotes.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -283,7 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				025032B32B7E40CD00693056 /* MainTableViewController.swift in Sources */,
 				025032992B7E3AB100693056 /* ViewController.swift in Sources */,
+				025032B62B7E438A00693056 /* MainTableViewCell.swift in Sources */,
 				025032952B7E3AB100693056 /* AppDelegate.swift in Sources */,
 				025032972B7E3AB100693056 /* SceneDelegate.swift in Sources */,
 			);
@@ -431,6 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 962T2B7968;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GeoNotes/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -459,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 962T2B7968;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GeoNotes/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

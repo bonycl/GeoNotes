@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //2. Создание UIWindow с исп конструктора который принимает сцену
         let window = UIWindow(windowScene: windowScene)
         
-        let vc = ViewController()
+        let vc = MainTableViewController()
         
         let navigation = UINavigationController(rootViewController: vc)
         
