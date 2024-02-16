@@ -22,6 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let vc = MainTableViewController()
         
         let navigation = UINavigationController(rootViewController: vc)
+        navigation.addCustomBottomLine(color: .lightGray, height: 1)
         
         //3. Создаем базовый контроллер
         window.rootViewController = navigation
