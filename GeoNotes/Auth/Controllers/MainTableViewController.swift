@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class MainTableViewController: UITableViewController {
 
@@ -35,21 +36,12 @@ class MainTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomMainTableViewCell", for: indexPath)
         
-        var content = cell.defaultContentConfiguration()
-        content.text = spotsName[indexPath.row]
-        content.textProperties.numberOfLines = 2
-        content.textProperties.color = .black
-        content.image = UIImage(named: "Car")
-        
-        content.imageProperties.maximumSize = CGSize(width: cell.frame.size.height - 8, height: cell.frame.size.height - 8)
-//        content.imageProperties.reservedLayoutSize = CGSize(width: tableView.rowHeight, height: tableView.rowHeight)
-        
-        content.imageProperties.cornerRadius = cell.frame.size.height / 2
-        cell.backgroundColor = .white
-        cell.contentConfiguration = content
-        cell.imageView?.layer.masksToBounds = true
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CustomMainTableViewCell", for: indexPath) as? CustomMainTableViewCell else {
+            fatalError("Debug: Unable to dequeue CustomMainTableViewCell")
+        }
+        cell.configure(with: "Car")
 
         return cell
     }
