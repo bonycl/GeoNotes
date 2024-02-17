@@ -14,7 +14,6 @@ extension MainTableViewController {
         
         self.view.backgroundColor = .white
         title = "Spots & Notes"
-        navigationItem.rightBarButtonItem = self.editButtonItem
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -24,8 +23,5 @@ extension MainTableViewController {
     func registerCell() {
         tableView.register(CustomMainTableViewCell.self, forCellReuseIdentifier: "CustomMainTableViewCell")
     }
-        
-        //set global or local
-        //self.navigationController?.addCustomBottomLine(color: UIColor.black, height: 1)
-    }
+}
 

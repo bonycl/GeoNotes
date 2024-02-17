@@ -10,7 +10,8 @@ import SnapKit
 
 class MainTableViewController: UITableViewController {
 
-    private let spotsName = ["Garage", "House", "Bar", "Gym", "Shop"]
+    private let places = Place.getPalces()
+
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
@@ -31,19 +32,21 @@ class MainTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return spotsName.count
+        return places.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomMainTableViewCell", for: indexPath)
-        
+
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CustomMainTableViewCell", for: indexPath) as? CustomMainTableViewCell else {
             fatalError("Debug: Unable to dequeue CustomMainTableViewCell")
         }
-        cell.configure(with: "Car")
+        cell.configureImage(with: places[indexPath.row].image)
+        cell.firstLabel.text = places[indexPath.row].name
+        cell.secondLabel.text = places[indexPath.row].location
+        cell.thirdLabel.text = places[indexPath.row].type
 
-        return cell
+        return cell 
     }
     //MARK: - Table view delegate
 
