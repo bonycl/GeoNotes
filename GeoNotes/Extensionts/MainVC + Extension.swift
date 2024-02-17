@@ -15,13 +15,22 @@ extension MainTableViewController {
         self.view.backgroundColor = .white
         title = "Spots & Notes"
         
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+     
+    }
+    
+    func setupNavBarItem() {
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonPressed))
+        navigationItem.rightBarButtonItem = addButton
     }
     
     func registerCell() {
         tableView.register(CustomMainTableViewCell.self, forCellReuseIdentifier: "CustomMainTableViewCell")
+    }
+    
+    @objc private func addButtonPressed() {
+        print("DEBUG :", "Add button Pressed")
+        let vc = SecondTableViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
