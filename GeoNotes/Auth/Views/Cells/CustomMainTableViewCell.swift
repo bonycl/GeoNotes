@@ -17,18 +17,15 @@ class CustomMainTableViewCell: UITableViewCell {
         return imageView
     }()
     
-    private let firstLabel: UILabel = {
+     let firstLabel: UILabel = {
         let label = UILabel()
         label.text = "Name"
-        //        label.textAlignment = .left
         label.font = UIFont.systemFont(ofSize: 18)
-        //label.font = UIFont(name: "Arial", size: 16)
         label.textColor = .black
-        //        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    private let secondLabel: UILabel = {
+     let secondLabel: UILabel = {
         let label = UILabel()
         label.text = "Location"
         label.font = UIFont.systemFont(ofSize: 15)
@@ -36,7 +33,7 @@ class CustomMainTableViewCell: UITableViewCell {
         return label
     }()
     
-    private let thirdLabel: UILabel = {
+     let thirdLabel: UILabel = {
         let label = UILabel()
         label.text = "Type"
         label.font = UIFont.systemFont(ofSize: 13)
@@ -51,11 +48,11 @@ class CustomMainTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupUI()
     }
     
-    func configure(with imageName: String) {
+    func configureImage(with imageName: String) {
         customImageView.image = UIImage(named: imageName)
+ 
     }
     
     override func layoutSubviews() {
