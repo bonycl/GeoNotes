@@ -48,12 +48,11 @@ class CustomMainTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupUI()
     }
     
     func configureImage(with imageName: String) {
         customImageView.image = UIImage(named: imageName)
-        
+ 
     }
     
     override func layoutSubviews() {

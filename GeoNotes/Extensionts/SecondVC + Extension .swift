@@ -10,11 +10,11 @@ import SnapKit
 
 extension SecondTableViewController {
     
-    func setupUI() {
-        
-        view?.backgroundColor = .white
-        title = "Add a new spot"
-    }
+//    func setupUI() {
+//        
+//        view?.backgroundColor = .white
+//        title = "New spot"
+//    }
     
     func setupNavBarItems() {
         let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(savePressed))
@@ -24,9 +24,12 @@ extension SecondTableViewController {
         navigationItem.leftBarButtonItem = cancelButton
     }
     
+//    func registerCell() {
+//        tableView.register(CustomSecondCell.self, forCellReuseIdentifier: "CustomSecondCell")
+//    }
+    
     @objc private func savePressed() {
         print("DEBUG :", "Save Pressed")
-    
     }
     @objc private func cancelPressed() {
         print("DEBUG :", "Cancel Pressed")

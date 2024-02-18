@@ -28,9 +28,20 @@ extension MainTableViewController {
     }
     
     @objc private func addButtonPressed() {
-        print("DEBUG :", "Add button Pressed")
-        let vc = SecondTableViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+//        print("DEBUG :", "Add+ Pressed")
+//        let vc = SecondTableViewController()
+//        self.navigationController?.pushViewController(vc, animated: true)
+        
+        print("DEBUG :", "Add+ Pressed")
+
+            let vc = SecondTableViewController()
+
+            let transition = CATransition()
+            transition.duration = 0.5
+            transition.type = CATransitionType.fade
+            self.navigationController?.view.layer.add(transition, forKey: kCATransition)
+            
+            self.navigationController?.pushViewController(vc, animated: false)
     }
 }
 
