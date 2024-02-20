@@ -19,7 +19,7 @@ extension UINavigationController {
         let lineView = UIView(frame: CGRect(x: 0, y: 0, width:0, height: height))
         lineView.backgroundColor = color
         navigationBar.addSubview(lineView)
-    
+            
         //MARK: - Conatraints
         lineView.snp.makeConstraints { make in
             make.width.equalTo(navigationBar)

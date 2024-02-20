@@ -13,9 +13,9 @@ extension MainTableViewController {
     func setupUI() {
         
         self.view.backgroundColor = .white
+        self.tableView.separatorInset.left = 16
+        self.tableView.separatorInset.right = 16
         title = "Spots & Notes"
-        
-     
     }
     
     func setupNavBarItem() {

@@ -21,7 +21,6 @@ class MainTableViewController: UITableViewController {
         setupNavBarItem()
         registerCell()
        
-        
     }
 
     // MARK: - Table view data source

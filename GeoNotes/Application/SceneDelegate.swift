@@ -22,6 +22,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let vc = MainTableViewController()
         
         let navigation = UINavigationController(rootViewController: vc)
+        navigation.navigationBar.isTranslucent = true
+        navigation.navigationBar.tintColor = .darkGray
+        navigation.navigationBar.backgroundColor = .white
+        
         navigation.addCustomBottomLine(color: .lightGray, height: 1)
         
         //3. Создаем базовый контроллер
@@ -30,6 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //4. Настройка window
         self.window = window
         self.window?.makeKeyAndVisible()
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
