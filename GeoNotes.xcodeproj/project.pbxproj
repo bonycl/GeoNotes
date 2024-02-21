@@ -14,6 +14,9 @@
 		025032A12B7E3AB200693056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0250329F2B7E3AB200693056 /* LaunchScreen.storyboard */; };
 		025032B32B7E40CD00693056 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025032B22B7E40CD00693056 /* MainTableViewController.swift */; };
 		025032B62B7E438A00693056 /* CustomMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025032B52B7E438A00693056 /* CustomMainTableViewCell.swift */; };
+		02A00B822B84B20500BBB934 /* copy exten second.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A00B812B84B20500BBB934 /* copy exten second.swift */; };
+		02A00B842B84B23000BBB934 /* copyc sec VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A00B832B84B23000BBB934 /* copyc sec VC.swift */; };
+		02A00B862B85B32900BBB934 /* KeyboardHandlingBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A00B852B85B32900BBB934 /* KeyboardHandlingBaseVC.swift */; };
 		02F2DA942B7F243D00E7FB38 /* MainVC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2DA932B7F243D00E7FB38 /* MainVC + Extension.swift */; };
 		02F2DA962B7F3F1A00E7FB38 /* UINavController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2DA952B7F3F1A00E7FB38 /* UINavController + Extension.swift */; };
 		02F2DA982B808FCD00E7FB38 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2DA972B808FCD00E7FB38 /* PlaceModel.swift */; };
@@ -33,6 +36,9 @@
 		025032A22B7E3AB200693056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		025032B22B7E40CD00693056 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		025032B52B7E438A00693056 /* CustomMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainTableViewCell.swift; sourceTree = "<group>"; };
+		02A00B812B84B20500BBB934 /* copy exten second.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "copy exten second.swift"; sourceTree = "<group>"; };
+		02A00B832B84B23000BBB934 /* copyc sec VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "copyc sec VC.swift"; sourceTree = "<group>"; };
+		02A00B852B85B32900BBB934 /* KeyboardHandlingBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandlingBaseVC.swift; sourceTree = "<group>"; };
 		02F2DA932B7F243D00E7FB38 /* MainVC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC + Extension.swift"; sourceTree = "<group>"; };
 		02F2DA952B7F3F1A00E7FB38 /* UINavController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavController + Extension.swift"; sourceTree = "<group>"; };
 		02F2DA972B808FCD00E7FB38 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 				025032982B7E3AB100693056 /* ViewController.swift */,
 				025032B22B7E40CD00693056 /* MainTableViewController.swift */,
 				02F2DA992B80B9D900E7FB38 /* SecondTableViewController.swift */,
+				02A00B832B84B23000BBB934 /* copyc sec VC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 		025032AB2B7E3B9100693056 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				02A00B852B85B32900BBB934 /* KeyboardHandlingBaseVC.swift */,
 				025032B42B7E435D00693056 /* Cells */,
 			);
 			path = Views;
@@ -128,6 +136,7 @@
 			children = (
 				02F2DA952B7F3F1A00E7FB38 /* UINavController + Extension.swift */,
 				02F2DA932B7F243D00E7FB38 /* MainVC + Extension.swift */,
+				02A00B812B84B20500BBB934 /* copy exten second.swift */,
 				02F2DA9B2B80BB8C00E7FB38 /* SecondVC + Extension .swift */,
 			);
 			path = Extensionts;
@@ -320,9 +329,12 @@
 				02F2DA942B7F243D00E7FB38 /* MainVC + Extension.swift in Sources */,
 				025032B62B7E438A00693056 /* CustomMainTableViewCell.swift in Sources */,
 				02F2DA9C2B80BB8C00E7FB38 /* SecondVC + Extension .swift in Sources */,
+				02A00B842B84B23000BBB934 /* copyc sec VC.swift in Sources */,
 				02F2DA9E2B81DE0E00E7FB38 /* CustomSecondCell.swift in Sources */,
 				025032952B7E3AB100693056 /* AppDelegate.swift in Sources */,
 				025032972B7E3AB100693056 /* SceneDelegate.swift in Sources */,
+				02A00B822B84B20500BBB934 /* copy exten second.swift in Sources */,
+				02A00B862B85B32900BBB934 /* KeyboardHandlingBaseVC.swift in Sources */,
 				02F2DA9A2B80B9D900E7FB38 /* SecondTableViewController.swift in Sources */,
 				02F2DA962B7F3F1A00E7FB38 /* UINavController + Extension.swift in Sources */,
 			);

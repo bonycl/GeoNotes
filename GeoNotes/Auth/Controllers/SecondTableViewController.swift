@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import SnapKit
 
-class SecondTableViewController: UIViewController {
-    
+class SecondTableViewController: KeyboardHandlingBaseVC {
+
     //MARK: - UI Components
-    var scrollView: UIScrollView!
+    var contentVi: UIView!
     var customImageView: UIImageView!
     var firstLabel: UILabel!
     var firstTextField: UITextField!
@@ -18,8 +19,8 @@ class SecondTableViewController: UIViewController {
     var locationTextField: UITextField!
     var typeLabel: UILabel!
     var typeTextField: UITextField!
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,13 +30,5 @@ class SecondTableViewController: UIViewController {
         
     }
 
-    
-    // MARK: - Navigation
-   
-
-//    func configureImage(with imageName: String) {
-//        customImageView.image = UIImage(named: imageName)
-//    }
-    
-    
 }
+
